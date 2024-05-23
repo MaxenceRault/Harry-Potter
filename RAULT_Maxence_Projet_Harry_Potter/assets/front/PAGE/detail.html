@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Détail de la carte</title>
+    <link rel="stylesheet" href="../css/detail.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/modal.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Harry Pottcard</h1>
+      <div class="menu-icon" id="icons">&#9776;</div>
+      <div class="close-icon" id="close-icon">&#9747;</div>
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="./Cartes.html">Cartes</a></li>
+        
+        <li><a href="./booster.html">Booster</a></li>
+        <li><a href="./Inscription.html">Inscription</a></li>
+        <li><a href="./Connexion.html">Connexion</a></li>
+        </ul>
+      </nav>
+    </header><br><br><br><br><br>
+    <main>
+      <div class="card-container" id="card-container">
+        <div id="card-template" class="card-detail" style="display: none;">
+          <h2 class="card-title"></h2>
+          <img class="card-img" src="#" alt="Image de la carte">
+          
+          <p class="card-description"></p>
+          <p class="eye">Couleur des yeux :  </p>
+          <p class="hair">Couleur des cheuveux : </p>
+          <p class="birthday">Date de naissance : </p>
+          <p class="blood"></p>
+          
+        </div>
+      </div>
+    </main>
+
+    <br /><br /><br />
+      <img
+        id="modal-btn"
+        class="hidden"
+        src="../../Image/bouton-radio-sur.png"
+        alt="Ouvrir le Modal"
+      />
+    <footer class="footer">
+      <div class="footer-links">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Informations de contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Suivez-nous</h3>
+        <a href="#"><img src="../../Image/facebook.png" alt="Facebook" class="logo-externe"/></a>
+        <a href="#"><img src="../../Image/twitter.png" alt="Twitter" class="logo-externe"/></a>
+        <a href="#"><img src="../../Image/instagram.png" alt="Instagram" class="logo-externe"/></a>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Échanger des cartes</h2>
+        <div id="exchange-container">
+          <div id="user-cards">
+            <h3>Vos cartes</h3>
+            <div id="your-cards-list"></div>
+          </div>
+          <div id="user-list">
+            <h3>Utilisateurs</h3>
+            <div id="user-cards-list"></div>
+          </div>
+        </div>
+        <button id="confirm-exchange">Confirmer l'échange</button>
+      </div>
+    </div>
+    
+    <script src="../js/header.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/main_detail.js"></script>
+  </body>
+</html>

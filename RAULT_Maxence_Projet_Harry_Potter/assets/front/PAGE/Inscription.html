@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/header.css" />
+    <title>Inscription</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Harry Pottcard</h1>
+    <div class="menu-icon" id="icons">&#9776;</div>
+    
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="./Cartes.html">Cartes</a></li>
+        
+        <li><a href="./booster.html">Booster</a></li>
+        <li><a href="#">Inscription</a></li>
+        <li><a href="./Connexion.html">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <br><br><br><br><br><br><br><br>
+    <div class="formulaire">
+      <div class="message-error">
+        <ul></ul>
+      </div>
+
+      <div class="message-success">Formulaire envoyé avec succès !</div>
+      <br><br><br>
+      <form method="post" enctype="multipart/form-data" id="form">
+        <div>
+          <h2>Inscription</h2>
+          <label for="pseudo" class="texte-form">Pseudo</label>
+          <input type="text" name="pseudo" id="pseudo" />
+        </div>
+        <div>
+          <label for="email" class="texte-form">Email</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div>
+          <label for="password" class="texte-form">Mot de passe</label>
+          <input type="password" name="password" id="password" />
+        </div>
+        <div>
+          <label for="password2" class="texte-form"
+            >Confirmation du mot de passe</label
+          >
+          <input type="password" name="password2" id="password2" />
+        </div>
+        
+        <button class="button-form" type="submit" >S'inscrire </button>
+        <p class="compte">Déjà un compte  : <a href="./Connexion.html" class="form-a">Connecter vous ici</a></p>
+
+
+      </form>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="footer-links">
+      <h3>Liens utiles</h3>
+      <ul>
+        <li><a href="#">Conditions d'utilisation</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">Informations de contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h3>Suivez-nous</h3>
+      <a href="#"><img src="../../Image/facebook.png" alt="Facebook" class="logo-externe"/></a>
+      <a href="#"><img src="../../Image/twitter.png" alt="Twitter" class="logo-externe"/></a>
+      <a href="#"><img src="../../Image/instagram.png" alt="Instagram" class="logo-externe"/></a>
+    </div>
+  </footer>
+
+    
+
+        
+      
+    
+
+  <script src="../js/main_inscription.js"></script>
+</body>
+</html> 

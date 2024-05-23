@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/profil.css">
+    <link rel="stylesheet" href="../css/modal.css" />
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <title>profil</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Harry Pottcard</h1>
+      <div class="menu-icon" id="icons">&#9776;</div>
+      
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./Cartes.html">Cartes</a></li>
+
+          <li><a href="#">Booster</a></li>
+          
+          <li><a href="#" >Votre profil</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="profile">
+      <h1 class="profile-title">Profile</h1>
+      <div class="tabs">
+        <button class="tab-btn active" data-tab-target="#tab-1">Votre profil</button>
+        <button class="tab-btn" data-tab-target="#tab-2">Vos cartes</button>
+
+    </div>
+    <div class="tab-content">
+        <div class="tab-pane active" id="tab-1">
+            <h2 class="tit">Votre profil</h2>
+            <div class="profile-container">
+              <img src="/assets/Image/Compte.jpg" alt="Compte">
+              <div class="profile-info">
+                <h2 class="profile-name">Name: </h2>
+                <p id="name"></p>
+                
+                <p class="profile-email">Email: <p id="email"></p>
+                
+                
+                <p class="profile-password">Password: *******</p>
+
+                <button id="deco">Deconnexion</button>
+              </div>
+              
+            </div>
+
+            
+        </div>
+        <div class="tab-pane" id="tab-2">
+            <h2 class="tit">Vos cartes</h2>
+            <!-- <p>Aucune cartes disponibe</p> -->
+            <div id="cards-container" class="cards-container"></div>
+
+        </div>
+        
+    </div>
+      
+        
+    </main>
+
+    <br /><br /><br />
+      <img
+        id="modal-btn"
+        class="hidden"
+        src="../../Image/bouton-radio-sur.png"
+        alt="Ouvrir le Modal"
+      />
+    <footer class="footer">
+      <div class="footer-links">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Informations de contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Suivez-nous</h3>
+        <a href="#"><img src="/assets/Image/facebook.png" alt="Facebook" class="logo-externe"/></a>
+        <a href="#"><img src="/assets/Image/twitter.png " alt="Twitter" class="logo-externe"/></a>
+        <a href="#"><img src="/assets/Image/instagram.png" alt="Instagram" class="logo-externe"/></a>
+      </div>
+    </footer>
+
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Échanger des cartes</h2>
+        <div id="exchange-container">
+          <div id="user-cards">
+            <h3>Vos cartes</h3>
+            <div id="your-cards-list"></div>
+          </div>
+          <div id="user-list">
+            <h3>Utilisateurs</h3>
+            <div id="user-cards-list"></div>
+          </div>
+        </div>
+        <button id="confirm-exchange">Confirmer l'échange</button>
+      </div>
+    </div>
+
+    <script src="../js/modal.js"></script>
+    <script src="../js/header.js"></script>
+    <script src="../js/main_profile.js"></script>
+    <script src="../js/card.js"></script>
+  </body>
+</html>

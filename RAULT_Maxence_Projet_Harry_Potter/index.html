@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/front/css/style_copy.css">
+  <link rel="stylesheet" href="./assets/front/css/header.css">
+  <link rel="stylesheet" href="/assets/front/css/footer.css">
+  <link rel="stylesheet" href="./assets/front/css/modal.css"> <!-- Ajout du CSS pour le modal -->
+  <title>Page d'accueil</title>
+</head>
+<body>
+  <header class="header">
+    <h1 class="logo">Harry Pottcard</h1>
+    <div class="menu-icon" id="icons">&#9776;</div>
+    
+    <nav class="nav" id="nav">
+      <ul class="nav-list">
+        <li><a href="#">Home</a></li>
+        <li><a href="./assets/front/PAGE/Cartes.html">Cartes</a></li>
+        <li><a href="./assets/front/PAGE/booster.html">Booster</a></li>
+        <li><a href="./assets/front/PAGE/Inscription.html">Inscription</a></li>
+        <li><a href="./assets/front/PAGE/Connexion.html">Connexion</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <h2 class="banner-title">Découvrez l'univers enchanté de Harry Pottcard</h2>
+    <p class="banner-description">
+      Plongez dans l'univers magique de Harry Potter avec des cartes captivantes
+      et des boosters officiels.
+    </p>
+    <!-- Bouton modal -->
+    <a href="./assets/front/PAGE/Inscription.html" class="banner-button">Commencer l'aventure</a>
+  </div>
+
+  <section class="features">
+    <h2 class="features-title">Fonctionnalités</h2>
+    <div class="feature-card">
+      <img src="./assets/Image/Carte_Albus_Dumbledore.png" alt="Carte" />
+      <h3>Cartes</h3>
+      <p>
+        Profitez de cartes uniques et captivantes pour personnaliser votre aventure
+        magique.
+      </p>
+    </div>
+    <div class="feature-card">
+      <img src="./assets/Image/harrypottertogethercontactbooster_800x.png" alt="Booster"  />
+      <h3>Boosters</h3> 
+      <p>
+        Obtenez des boosters officiels pour débloquer des cartes pour votre collection
+      </p>
+    </div>
+  </section>
+
+
+  <br><br><br>
+  <img id="modal-btn" class="hidden" src="./assets/Image/bouton-radio-sur.png" alt="Ouvrir le Modal">
+  <footer class="footer">
+    <div class="footer-links">
+      <h3>Liens utiles</h3>
+      <ul>
+        <li><a href="#">Conditions d'utilisation</a></li>
+        <li><a href="#">Politique de confidentialité</a></li>
+        <li><a href="#">Informations de contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-social">
+      <h3>Suivez-nous</h3>
+      <a href="#"><img src="./assets/Image/facebook.png" alt="Facebook" class="logo-externe"/></a>
+      <a href="#"><img src="./assets/Image/twitter.png" alt="Twitter" class="logo-externe"/></a>
+      <a href="#"><img src="./assets/Image/instagram.png" alt="Instagram" class="logo-externe"/></a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Échanger des cartes</h2>
+      <div id="exchange-container">
+        <div id="user-cards">
+          <h3>Vos cartes</h3>
+          <div id="your-cards-list"></div>
+        </div>
+        <div id="user-list">
+          <h3>Utilisateurs</h3>
+          <div id="user-cards-list"></div>
+        </div>
+      </div>
+      <button id="confirm-exchange">Confirmer l'échange</button>
+    </div>
+  </div>
+
+  <script src="./assets/front/js/header.js"></script>
+  <script src="./assets/front/js/main.js"></script>
+  <script src="./assets/front/js/modal.js"></script> 
+</body>
+</html>

@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+   
+  }
+  
+
+
+
+  .banner {
+    background-image: url("../PAGE/image-le-nouveau-parc-dattraction-harry-potter-a-ouvert-ses-portes-1024x576.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .banner-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .banner-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 500px;
+  }
+  
+  .banner-button {
+    background-color: #d4af37;
+    color: #300165;
+    padding: 10px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .banner-button:hover {
+    background-color: #a1862b;
+  }
+
+  .features {
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .features-title {
+    font-size: 2rem;
+    margin-bottom: 50px;
+  }
+  
+  .feature-card {
+    background-color: #e6e6ea;
+    padding: 30px;
+    border-radius: 5px;
+    margin: 20px;
+    display: inline-block;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border: solid;
+    border-color: #300165;
+    
+    
+  }
+  
+  .feature-card img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+  }
+
+  
+
+
+  
+  .feature-card:hover{
+    transform:translateY(-5px) ;
+  }
+
+
+  
+
+  
+
+
+
+  

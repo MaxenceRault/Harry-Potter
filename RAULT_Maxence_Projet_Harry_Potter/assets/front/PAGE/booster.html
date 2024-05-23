@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/form.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <!-- <link rel="stylesheet" href="../css/collection.css" /> -->
+    <link rel="stylesheet" href="../css/modal.css" />
+    <link rel="stylesheet" href="../css/booster.css" />
+    <title>Booster</title>
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">Harry Pottcard</h1>
+      <div class="menu-icon" id="icons">&#9776;</div>
+      
+      <nav class="nav" id="nav">
+        <ul class="nav-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="./Cartes.html">Cartes</a></li>
+
+          <li><a href="#">Booster</a></li>
+          <li><a href="./Inscription.html">Inscription</a></li>
+          <li><a href="./Connexion.html">Connexion</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <br><br><br><br><br><br><br>
+      
+      <button id="booster-button">
+        <img
+          src="../../Image/harrypottertogethercontactbooster_800x.png"
+          alt="Booster Image"
+          
+          class="booster-image"
+        />
+      </button>
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+      <div id="booster-container" class="booster-container"></div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-links">
+        <h3>Liens utiles</h3>
+        <ul>
+          <li><a href="#">Conditions d'utilisation</a></li>
+          <li><a href="#">Politique de confidentialité</a></li>
+          <li><a href="#">Informations de contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <h3>Suivez-nous</h3>
+        <a href="#"
+          ><img
+            src="../../Image/facebook.png"
+            alt="Facebook"
+            class="logo-externe"
+        /></a>
+        <a href="#"
+          ><img
+            src="../../Image/twitter.png"
+            alt="Twitter"
+            class="logo-externe"
+        /></a>
+        <a href="#"
+          ><img
+            src="../../Image/instagram.png"
+            alt="Instagram"
+            class="logo-externe"
+        /></a>
+      </div>
+    </footer>
+
+    <!-- Modal HTML -->
+    <img
+      id="modal-btn"
+      class="hidden"
+      src="../../Image/bouton-radio-sur.png"
+      alt="Ouvrir le Modal"
+    />
+    <div id="modal" class="modal hidden">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Échanger des cartes</h2>
+        <div id="exchange-container">
+          <div id="user-cards">
+            <h3>Vos cartes</h3>
+            <div id="your-cards-list"></div>
+          </div>
+          <div id="user-list">
+            <h3>Utilisateurs</h3>
+            <div id="user-cards-list"></div>
+          </div>
+        </div>
+        <button id="confirm-exchange">Confirmer l'échange</button>
+      </div>
+    </div>
+
+    <script src="../js/header.js"></script>
+    <script src="../js/modal.js"></script>
+    <script src="../js/main_booster.js"></script>
+  </body>
+</html>

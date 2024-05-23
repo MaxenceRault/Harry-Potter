@@ -1,0 +1,97 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f8; 
+  color: #333;
+  background-image: url("../../Image/Connexuion_background.jpg");
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position:initial ;
+}
+
+.formulaire {
+  background-color: #1a0320; 
+  padding: 2%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  width: 20%; 
+  margin: 5% auto; 
+  position: relative; 
+}
+
+.texte-form {
+  color: #ffffff; 
+  margin-bottom: 10px; 
+  display: block; 
+}
+
+input[type="email"], input[type="password"] {
+  width: 100%; 
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #4e0165;
+  border-radius: 4px;
+  background-color: #fff; 
+  color: #333;
+}
+
+.button-form {
+  background-color: #4e0165; 
+  color: #ffffff;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  display: block; 
+  margin-top: 10px;
+}
+
+.button-form:hover {
+  background-color: #d4af37; 
+}
+
+.message-error, .message-success {
+  color: #ffffff; 
+  padding: 15px;
+  border-radius: 4px;
+  display: none; 
+  position: absolute; 
+  top: 10px;
+  left: 10px;
+  right: 10px;
+}
+
+.message-error {
+  background-color: rgba(212, 42, 0, 0.6); 
+  border: 1px solid rgb(212, 42, 0);
+}
+
+.message-success {
+  background-color: rgba(113, 212, 0, 0.6); 
+  border: 1px solid rgb(113, 212, 0);
+}
+
+.compte, .form-a {
+  color: #ffffff; 
+  text-align: center;
+  display: block; 
+  margin-top: 20px;
+}
+
+.form-a {
+  color: #d4af37; 
+}
+h2{
+  color: #ffffff; 
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .formulaire {
+      width: 80%; 
+  }
+}
